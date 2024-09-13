@@ -1,2 +1,2 @@
  !/bin/bash
- gcc "$CFILE" -o function
+ gcc $CFILE -o cisfun
