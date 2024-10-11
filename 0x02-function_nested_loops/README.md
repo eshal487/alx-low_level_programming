@@ -1,0 +1,1 @@
+  About functions in c
