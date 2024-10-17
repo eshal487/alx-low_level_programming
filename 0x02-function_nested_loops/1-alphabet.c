@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * print_alphabet - print out all the alphabet
  * Return: 0 success
  */
 
@@ -13,7 +13,7 @@ void print_alphabet(void)
 	{
 		_putchar(letters[i]);
 	}
-	_putchar('n');
+		 _putchar('\n');
 }
 
 
