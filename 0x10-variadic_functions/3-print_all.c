@@ -14,23 +14,22 @@ void print_all(const char * const format, ...)
 	va_start(li, format);
 	while (format && format[i])
 	{
-		printf("%s", sep);
 		switch (format[i])
 		{	case 'c':
-				printf("%c", va_arg(li, int));
+				printf("%s%c" ,sep,  va_arg(li, int));
 				break;
 			case 'i':
-				printf("%d", va_arg(li, int));
+				printf("%s%d" ,sep,  va_arg(li, int));
 				break;
 			case 'f':
-				printf("%f", va_arg(li, double));
+				printf("%s%f" ,sep,  va_arg(li, double));
 				break;
 			case 's':
 				str = va_arg(li, char *);
-				if (str == NULL)
+				if (!str)
 					printf("(nil)");
 				else
-					printf("%s", str);
+					printf("%s%s",sep, str);
 				break;
 			default:
 			i++;
